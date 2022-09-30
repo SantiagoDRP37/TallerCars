@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "ec909257-2deb-46b4-9c22-c373742f8222",
+		"name": "Cars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44306/api/Cars",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"George Lukas\",\r\n    \"matricula\": \"ABC123\",\r\n    \"celular\":\"047351654\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44306/api/Cars",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44306",
+					"path": [
+						"api",
+						"Cars"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "con",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44306/api/Cars/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44306/api/Cars/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44306",
+					"path": [
+						"api",
+						"Cars",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44306/api/Cars/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"James Bond\",\r\n    \"matricula\": \"AAA006\",\r\n    \"celular\": \"007321654\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44306/api/Cars/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44306",
+					"path": [
+						"api",
+						"Cars",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44306/api/Cars/3",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "TYP",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"nombre\": \"George Lukas\",\r\n    \"matricula\": \"ABC123\",\r\n    \"celular\": \"047351654\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44306/api/Cars/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44306",
+					"path": [
+						"api",
+						"Cars",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
